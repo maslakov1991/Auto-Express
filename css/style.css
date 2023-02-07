@@ -14,7 +14,8 @@ a {
     display: inline-block;
 }
 
-ul {
+ul,
+ol {
     list-style: none;
 }
 
@@ -31,6 +32,8 @@ body {
     margin: 0 auto;
     padding: 0 10px;
 }
+
+/* --------------HEADER--------------- */
 
 .header {
     background-image: url(../images/header-bg.jpg);
@@ -79,19 +82,19 @@ body {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 21px;
-    max-width: 250px;
+    max-width: 252px;
     padding: 14px 54px 15px 55px;
     background: #5a0d67;
     transition: all 0.4s;
 }
-.header__link:hover {
+.button:hover {
     color: #5a0d67;
     background: #ffffff;
 }
 .header__socials {
     padding: 70px 0 0 65px;
     display: flex;
-    gap: 10px; 
+    gap: 10px;
     align-items: center;
 }
 .header__car-img {
@@ -105,3 +108,114 @@ body {
     text-align: center;
 }
 
+/* --------------SERVICES---------------- */
+
+.services {
+    padding-top: 300px;
+}
+.title {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    color: #21062a;
+    position: relative;
+}
+.title::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: #21062a;
+    position: absolute;
+    top: 22px;
+    margin-left: 15px;
+}
+.cervices__inner {
+    display: flex;
+    margin-bottom: 100px;
+}
+.services__content {
+    flex-basis: 505px;
+    margin-right: 95px;
+}
+.services__content-title {
+    color: #5a0d67;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 12px;
+}
+.services__content-textbox {
+    margin-bottom: 57px;
+}
+.services__content-text {
+    margin-bottom: 12px;
+}
+.button {
+}
+.button--decor {
+    margin-top: -7px;
+    color: #ffffff;
+    position: relative;
+}
+.button--decor:hover {
+    border: 1px solid #5a0d67;
+}
+.button--decor::after {
+    content: "ЖМИ";
+    position: absolute;
+    text-transform: uppercase;
+    color: #c4c4c4;
+    margin-left: 135px;
+}
+.button--decor::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 80px;
+    background-color: #c4c4c4;
+    top: 25px;
+    right: -75px;
+}
+.services__list {
+    counter-reset: number;
+}
+.services__list-item {
+    counter-increment: number;
+    border: 1px solid #c4c4c4;
+    margin-bottom: 12px;
+    width: 450px;
+    padding: 10px 15px 10px 113px;
+    position: relative;
+    color: #c4c4c4;
+    transition: all .4s;
+}
+.services__list-item::before {
+    content: "0" counter(number);
+    position: absolute;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    left: 20px;
+    transition: all .4s;
+}
+.services__list-item:hover {
+    border: 1px solid #5a0d67;
+    width: 500px;
+}
+.services__list-item:hover .services__item-title {
+    color: #5a0d67;
+}
+.services__list-item:hover::before {
+    color: #5a0d67;
+}
+.services__item-title {
+    font-weight: 300;
+    font-size: 24px;
+    transition: all .4s;
+}
+.services__item-text {
+}
