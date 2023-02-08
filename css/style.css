@@ -96,6 +96,8 @@ button {
 }
 .header__socials {
     padding: 70px 0 0 65px;
+}
+.socials {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -315,8 +317,6 @@ button {
     display: flex;
     justify-content: space-between;
 }
-.contacts__info {
-}
 .contacts__item {
     margin-bottom: 20px;
 }
@@ -324,12 +324,13 @@ button {
     color: #5a0d67;
 }
 .contacts__form {
-    background-color: #21062A;
+    background-color: #21062a;
     padding: 50px 75px 57px;
     text-align: center;
 }
 .contacts__form-title {
     color: #ffffff;
+    text-align: left;
     margin-left: 53px;
     margin-bottom: 16px;
 }
@@ -359,4 +360,20 @@ button {
     color: #ffffff;
     margin-top: 78px;
     cursor: pointer;
+}
+
+/* --------------FOOTER--------------- */
+.footer {
+    background: #21062a;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    height: 100px;
+}
+.policy {
+    cursor: pointer;
+    color: #ffffff;
 }
