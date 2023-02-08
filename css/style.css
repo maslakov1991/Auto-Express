@@ -226,13 +226,14 @@ body {
 .benefits__image {
     margin-right: 95px;
 }
-.benefits__content {
-}
 .benefits__title {
     margin-left: 185px;
 }
+.benefits__content {
+    width: 100%;
+}
 .benefits__list {
-    padding: 23px 284px 45px 185px;
+    padding: 23px 0 45px 185px;
     background-color: #21062a;
 }
 .benefits__item {
@@ -251,7 +252,9 @@ body {
     font-weight: 300;
     font-size: 24px;
     line-height: 36px;
+    max-width: 316px;
 }
 .benefits__item-text {
     color: #c4c4c4;
+    max-width: 316px;
 }
