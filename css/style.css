@@ -238,6 +238,7 @@ body {
 }
 .benefits__item {
     color: #ffffff;
+    max-width: 316px;
 }
 .benefits__item + .benefits__item {
     margin-top: 20px;
@@ -252,9 +253,56 @@ body {
     font-weight: 300;
     font-size: 24px;
     line-height: 36px;
-    max-width: 316px;
 }
 .benefits__item-text {
     color: #c4c4c4;
-    max-width: 316px;
+}
+
+/* ---------------CAROUSEL-------------- */
+.carousel {
+    margin-bottom: 100px;
+}
+.carousel__inner {
+    margin: 0 -7px;
+}
+.carousel__item {
+    margin: 0 7px;
+}
+.carousel__item-box {
+    text-align: center;
+    border: 1px solid #c4c4c4;
+    padding: 6px 6px 16px 6px;
+    transition: all 0.4s;
+}
+.carousel__item-img {
+    max-width: 100%;
+    margin-bottom: 23px;
+}
+.carousel__item-title {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+.carousel__item-box:hover {
+    background-color: #5a0d67;
+    color: #ffffff;
+    border-color: #5a0d67;
+}
+.carousel .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.carousel .slick-dots button {
+    font-size: 0;
+    width: 50px;
+    height: 1px;
+    border: none;
+    padding: 0;
+    background-color: #c4c4c4;
+    margin: 0 10px;
+}
+.carousel .slick-active button{
+    height: 3px;
+    background-color: #5a0d67;
 }
