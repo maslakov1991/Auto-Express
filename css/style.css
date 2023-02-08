@@ -152,8 +152,6 @@ body {
 .services__content-text {
     margin-bottom: 12px;
 }
-.button {
-}
 .button--decor {
     margin-top: -7px;
     color: #ffffff;
@@ -189,7 +187,7 @@ body {
     padding: 10px 15px 10px 113px;
     position: relative;
     color: #c4c4c4;
-    transition: all .4s;
+    transition: all 0.4s;
 }
 .services__list-item::before {
     content: "0" counter(number);
@@ -200,7 +198,7 @@ body {
     text-transform: uppercase;
     transform: rotate(-90deg);
     left: 20px;
-    transition: all .4s;
+    transition: all 0.4s;
 }
 .services__list-item:hover {
     border: 1px solid #5a0d67;
@@ -215,7 +213,45 @@ body {
 .services__item-title {
     font-weight: 300;
     font-size: 24px;
-    transition: all .4s;
+    transition: all 0.4s;
 }
-.services__item-text {
+
+/* --------------BENEFITS----------------- */
+.benefits {
+    padding-bottom: 100px;
+}
+.benefits__inner {
+    display: flex;
+}
+.benefits__image {
+    margin-right: 95px;
+}
+.benefits__content {
+}
+.benefits__title {
+    margin-left: 185px;
+}
+.benefits__list {
+    padding: 23px 284px 45px 185px;
+    background-color: #21062a;
+}
+.benefits__item {
+    color: #ffffff;
+}
+.benefits__item + .benefits__item {
+    margin-top: 20px;
+}
+.benefits__item-number {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+}
+.benefits__item-title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+}
+.benefits__item-text {
+    color: #c4c4c4;
 }
