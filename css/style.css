@@ -26,6 +26,9 @@ body {
     line-height: 27px;
     color: #2c2b2b;
 }
+button {
+    border: none;
+}
 
 .container {
     max-width: 1220px;
@@ -302,7 +305,58 @@ body {
     background-color: #c4c4c4;
     margin: 0 10px;
 }
-.carousel .slick-active button{
+.carousel .slick-active button {
     height: 3px;
     background-color: #5a0d67;
+}
+
+/* ---------------CONTACTS---------------- */
+.contacts__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__info {
+}
+.contacts__item {
+    margin-bottom: 20px;
+}
+.contacts__item-title {
+    color: #5a0d67;
+}
+.contacts__form {
+    background-color: #21062A;
+    padding: 50px 75px 57px;
+    text-align: center;
+}
+.contacts__form-title {
+    color: #ffffff;
+    margin-left: 53px;
+    margin-bottom: 16px;
+}
+.contacts__form-title::after {
+    background: #fff;
+}
+.contacts__input {
+    display: block;
+    background-color: transparent;
+    width: 450px;
+    height: 75px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    margin-bottom: 12px;
+    padding: 0 10px;
+    font-size: 24px;
+}
+.contacts__input::placeholder {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #c4c4c4;
+}
+.contacts__btn {
+    color: #ffffff;
+    margin-top: 78px;
+    cursor: pointer;
 }
